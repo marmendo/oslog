@@ -18,4 +18,4 @@ RUN echo "JAVA_OPTS=\"\$JAVA_OPTS -Djboss.bind.address=0.0.0.0 -Djboss.node.name
 # ports
 EXPOSE 8080
 
-#CMD ["/opt/eap/bin/standalone.sh"]
+CMD ["/opt/eap/bin/standalone.sh"]
