@@ -7,24 +7,31 @@ Create a new app running the following command (we use a "demo" project for this
 `$ oc login`
 
 Set "demo" as your active project
+
 `$ oc project demo`
 
 Lets create an application from this repository (Or use your own repository copy instead of "marmendo")
+
 `$ oc new-app git://github.com/marmendo/oslog`
 
 Once the builder finished you must create the route from the command line (you can do this from the web console too)
+
 `$ oc expose service/oslog -l name=oslog`
 
 Open the the project on the OpenShift web console and wait for the builder to finish
 Check that the application deployment has finished.
 
 From the OpenShift console go to overview and test the application
+
 `http://oslog-demo.apps.example.com/sysout`
 
-Refresh the page several times and check the log contents which would look like this
+Refresh the page several times
 
 Now test with log4j
+
 `http://oslog-demo.apps.example.com/log4j2`
+
+Check the log contents which would look like this:
 
 ```
 13:20:57,032 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 38) WFLYSRV0010: Deployed "activemq-rar.rar" (runtime-name : "activemq-rar.rar")
