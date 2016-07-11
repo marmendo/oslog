@@ -21,7 +21,7 @@ Once the builder finished you must create the route from the command line (you c
 Open the the project on the OpenShift web console and wait for the builder to finish
 Check that the application deployment has finished.
 
-From the OpenShift console go to overview and test the application
+Open a new broser tab and test the application
 
 `http://oslog-demo.apps.example.com/sysout`
 
