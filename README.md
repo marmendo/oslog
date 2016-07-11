@@ -18,10 +18,12 @@ Open the the project on the OpenShift web console After some seconds it will lau
 `$ oc expose service/oslog -l name=oslog`
 
 From the OpenShift console go to overview and test the application
-
 `http://oslog-demo.apps.example.com/sysout`
 
 Refresh the page several times and check the log contents which would look like this
+
+Now test with log4j
+`http://oslog-demo.apps.example.com/log4j2`
 
 ```
 13:20:57,032 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 38) WFLYSRV0010: Deployed "activemq-rar.rar" (runtime-name : "activemq-rar.rar")
