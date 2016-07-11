@@ -9,12 +9,14 @@ Create a new app running the following command (we use a "demo" project for this
 Set "demo" as your active project
 `$ oc project demo`
 
+Lets create an application from this repository (Or use your own repository copy instead of "marmendo")
 `$ oc new-app git://github.com/marmendo/oslog`
-(Or use your own repository)
 
-Open the the project on the OpenShift web console After some seconds it will launch a builder Once the builder finished you must create the route from the command line (you can do this from the web console too)
-
+Once the builder finished you must create the route from the command line (you can do this from the web console too)
 `$ oc expose service/oslog -l name=oslog`
+
+Open the the project on the OpenShift web console and wait for the builder to finish
+Check that the application deployment has finished.
 
 From the OpenShift console go to overview and test the application
 `http://oslog-demo.apps.example.com/sysout`
