@@ -7,10 +7,11 @@ Create a new app running the following command (we use a "demo" project for this
 `$ oc login`
 ....
 
-Create a "demo" project if it doesn't exist and select it from the command line
+Set "demo" as your active project
 `$ oc project demo`
 
-`$ oc new-app git://github.com/marmendo/oslog  (Or use your own repository)`
+`$ oc new-app git://github.com/marmendo/oslog`
+(Or use your own repository)
 
 Open the the project on the OpenShift web console After some seconds it will launch a builder Once the builder finished you must create the route from the command line (you can do this from the web console too)
 
