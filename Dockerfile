@@ -16,6 +16,6 @@ COPY oslog.war /opt/eap/standalone/deployments/ROOT.war
 RUN echo "JAVA_OPTS=\"\$JAVA_OPTS -Djboss.bind.address=0.0.0.0 -Djboss.node.name=webmutuaNode -Xms400m -Xmx400m\"" >> /opt/eap/bin/standalone.conf
 
 # ports
-EXPOSE 8080
+#EXPOSE 8080
 
 #CMD ["/opt/eap/bin/standalone.sh"]
