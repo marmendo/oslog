@@ -5,7 +5,6 @@ Create a "demo" project using the OpenShift web console.
 Create a new app running the following command (we use a "demo" project for this test)
 
 `$ oc login`
-....
 
 Set "demo" as your active project
 `$ oc project demo`
